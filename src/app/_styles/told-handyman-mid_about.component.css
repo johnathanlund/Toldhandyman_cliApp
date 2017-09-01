@@ -1,0 +1,223 @@
+#mid_about_container {
+  width: 100vw;
+  height: 85vh;
+  background-color: #fff;
+  border-bottom: 5px #000 solid;
+  margin: -3vh 0 0 0;
+  padding: 0;
+}
+@media (min-device-width: 375px) {
+  #mid_about_container {
+    height: 70vh;
+  }
+}
+@media (min-device-width: 414px) {
+  #mid_about_container {
+    height: 60vh;
+  }
+}
+@media (min-device-width: 768px)  {
+  #mid_about_container {
+    height: 40vh;
+    margin: -3vh 0 5vh 0;
+  }
+}
+@media (min-device-width: 1024px) {
+  #mid_about_container {
+    width: 100%;
+    height: 85vh;
+  }
+}
+@media (orientation: landscape) {
+  #mid_about_container {
+    height: 90vh;
+  }
+}
+@media (orientation: landscape) and (min-device-height: 414px) {
+  #mid_about_container {
+    height: 75vh;
+  }
+}
+@media (orientation: landscape) and (min-device-width: 1024px) {
+  #mid_about_container {
+    height: 80vh;
+  }
+}
+@media (min-device-width: 1800px) and (min-device-height: 800px) {
+  #mid_about_container {
+    height: 60vh;
+    margin: 0 0 0 0;
+  }
+}
+
+.about_heading {
+  width: 100vw;
+  height: 7%;
+  font-style: italic;
+  color: rgb(180, 21, 17);
+  font-weight: bolder;
+  text-align: center;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+@media (min-device-width: 375px) {
+  .about_heading {
+    margin: 0 0 30px 0;
+  }
+}
+@media (min-device-width: 414px) {
+  .about_heading {
+    margin: 0 0 40px 0;
+  }
+}
+
+@media (min-device-width: 768px) {
+  .about_heading {
+    margin: -3vh 0 6vh 0;
+  }
+}
+@media (min-device-width: 1024px)  {
+  .about_heading {
+    height: 20%;
+    margin: 0;
+  }
+}
+@media (orientation: landscape) and (max-device-height: 375px) {
+  .about_heading {
+    margin: -20px 0 40px 0;
+  }
+}
+@media (min-device-width: 1800px) and (min-device-height: 800px) {
+  .about_heading {
+    margin: -20px 0 40px 0;
+  }
+}
+
+.about_heading h3 {
+  font-size: 170%;
+  padding: 3% 0 0 0;
+  margin: 19px 0 0 0;
+}
+
+.about_body {
+  width: 96vw;
+  height: 89%;
+  margin: -3vh 0 0 0;
+}
+@media (min-device-width: 1024px) {
+  .about_body {
+    width: 100%;
+    height: 74%;
+  }
+}
+@media (orientation: landscape) and (max-device-height: 375px) {
+    .about_body {
+      width: 90vw;
+      height: 75%;
+      margin: -3vh 0 0 5vw;
+    }
+}
+
+.about_image {
+  width: 25vw;
+  height: 15vh;
+  float: right;
+  background-image: url('http://toldplumbing.com/images/header.jpg');
+  background-size: cover;
+  margin: 2vh 7vw 15px 1vw;
+}
+@media (min-device-width: 1024px) {
+  .about_image {
+    width: 35vw;
+    height: 40vh;
+  }
+}
+@media (orientation: landscape) and (max-device-height: 375px) {
+  .about_image {
+    height: 30vh;
+    margin: 1vh 2vw 15px 1vw;
+  }
+}
+@media (min-device-width: 1800px) and (min-device-height: 800px) {
+  .about_image {
+    width: 30vw;
+    height: 30vh;
+  }
+}
+
+.about_text {
+  width: 100%;
+  height: 55vh;
+  margin: 0 0 0 8vw;
+  font-size: 65%;
+}
+@media (min-device-width: 1024px) {
+  .about_text {
+    font-size: 100%;
+    margin: 0 0 0 4vw;
+  }
+}
+@media (orientation: landscape) and (max-device-height: 375px) {
+  .about_text {
+    font-size: 50%;
+    margin: 0 0 0 1vw;
+  }
+}
+
+.about_link {
+  width: 100vw;
+  height: 5vh;
+  text-align: center;
+  margin: -2% 0 0 5%;
+}
+@media (min-device-width: 375px)  {
+  .about_link {
+    margin: -5% 0 0 3%;
+  }
+}
+@media (min-device-width: 414px)  {
+  .about_link {
+    margin: -10% 0 0 3%;
+  }
+}
+@media (min-device-width: 1024px)  {
+  .about_link {
+    margin: 0;
+  }
+}
+@media (orientation: landscape) {
+  .about_link {
+    margin: -15px 0 0 0;
+  }
+}
+@media (orientation: landscape) and (min-device-height: 414px) {
+  .about_link {
+    margin: -50px 0 0 0;
+  }
+}
+@media (orientation: landscape) and (min-device-height: 768px) {
+  .about_link {
+    margin: 10px 0 0 0;
+  }
+}
+@media (min-device-width: 1800px) and (min-device-height: 800px) {
+  .about_link {
+    margin: -5vh 0 0 0;
+  }
+}
+
+.about_link a{
+  font-size: 90%;
+  color: rgb(82, 177, 145);
+  margin: 0.5vh 10px 0 0;
+}
+@media (min-device-width: 1024px) {
+  .about_link a {
+    font-size: 120%;
+    margin: 1vh 1vw 0 0;
+  }
+}
+.about_link a:hover {
+  color: rgb(180, 11, 17);
+  font-stretch: ultra-expanded;
+}

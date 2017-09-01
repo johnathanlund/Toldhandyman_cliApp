@@ -1,0 +1,70 @@
+.admin_services_container {
+  width: 100%;
+  height: 200vh;
+  /*background-color: purple;*/
+  background: linear-gradient(grey, white);
+  border-top: 2px solid black;
+}
+
+.service_section{
+  width: 80vw;
+  margin: 0 0 0 10vw;
+  padding: 0 0 10vh 0;
+}
+
+.service_card {
+  height: 30%;
+}
+
+.serviceList_section {
+  width: 80vw;
+  margin: 0 0 0 10vw;
+}
+
+.add_card {
+  margin: 5vh 0 0 0;
+}
+
+.add_list_card {
+  margin: 5vh 0 0 0;
+}
+
+.modalButton {
+  background: radial-gradient( rgb(180, 21, 17), #fff);
+  color: white;
+}
+.edit_modalButton {
+  background: orange;
+}
+
+modal-header {
+  background-color: grey;
+  color: rgb(180, 21, 17);
+}
+modal-header strong {
+  text-decoration: underline;
+}
+
+.service_card_header {
+  color: rgb(180, 21, 17);
+}
+
+.card_table_block {
+  height: 60vh;
+  overflow: scroll;
+  border: 5px solid darkgrey;
+}
+
+/*.table-striped {
+  border: 5px solid purple;
+}*/
+
+.img-resized {
+  width: 100px;
+  height: 70px;
+}
+
+.edit_Image {
+  width: 300px;
+  height: 225px;
+}

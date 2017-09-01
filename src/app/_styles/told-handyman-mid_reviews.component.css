@@ -1,0 +1,317 @@
+#mid_reviews_container {
+  width: 100%;
+  height: 70vh;
+  background-color: #fff;
+  border-bottom: 5px #000 solid;
+  text-align: center;
+  margin: -3vh 0 0 0;
+  padding: 0;
+}
+@media (min-device-width: 1024px) {
+  #mid_reviews_container {
+    height: 85vh;
+  }
+}
+@media (orientation: landscape) and (min-device-height: 300px) {
+  #mid_reviews_container {
+    height: 80vh;
+  }
+}
+@media (orientation: landscape) and (max-device-height: 1024px) {
+  #mid_reviews_container {
+    height: 88vh;
+    margin: 0 0 0 0;
+  }
+}
+@media (min-device-width: 1800px) and (min-device-height: 800px) {
+  #mid_reviews_container {
+    height: 70vh;
+    margin: 0 0 0 0;
+  }
+}
+
+.reviews_heading {
+  width: 100vw;
+  height: 6%;
+  text-align: center;
+  padding: 0;
+}
+@media (min-device-width: 1024px)  {
+  .reviews_heading {
+    width: 100vw;
+    height: 7%;
+  }
+}
+
+.reviews_heading h2 {
+  padding: 0 0 0 0;
+  margin: 24px 0 0 0;
+  line-height: 1.0;
+  color: rgb(180, 21, 17);
+}
+@media (orientation: landscape) and (min-device-height: 300px) {
+  #reviews_heading_text {
+    margin: 15px 0 5px 0;
+  }
+}
+
+.reviews_wrapper {
+  position: relative;
+  top: 300%;
+  left: 10%;
+  width: 80%;
+  margin: 0 0 0 0;
+  text-align: center;
+  animation: 40s credits linear infinite;
+}
+@media (min-device-width: 1024px) {
+    .reviews_wrapper {
+      width: 80%;
+      height: 20vh;
+      left: 10%;
+      margin: 0 0 5vh 0;
+    }
+}
+
+.reviews_title {
+  margin-bottom: 50px;
+  font-size: 200%;
+  font-style: italic;
+}
+
+.review_author {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.review_author h4{
+  color: rgb(180, 21, 17);
+}
+.review_author h4 p {
+  font-size: 80%;
+  /*font-style: normal;*/
+}
+
+/* Add a height & width to create a single size
+for the review consistently vs sized to content.*/
+.work_review {
+  margin: 0 0 50 0;
+  font-size: 70%;
+  border-bottom: 1px solid rgb(180, 21, 17);
+}
+@media (min-device-width: 1024px) {
+    .work_review {
+      font-size: 90%;
+      margin: 0 0 80 0;
+    }
+}
+
+.review_image {
+  float: right;
+  width: 30vw;
+  height: 18vh;
+  margin: 0 0 20px 10px;
+}
+
+@media (min-device-width: 768px) {
+  .review_image {
+    width: 15vw;
+    height: 10vh;
+    margin: -2vh 0 20px 10px;
+  }
+}
+@media (min-device-width: 1024px) {
+  .review_image {
+    width: 20vw;
+    height: 20vh;
+    margin: -2vh 0 0 10px;
+  }
+}
+
+@keyframes credits {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -400%;
+  }
+}
+
+
+
+.reviews_normal_wrapper {
+  width: 80%;
+  text-align: center;
+  /*left: 10%;*/
+  margin: 0 0 0 10%;
+}
+@media (min-device-width: 1024px) {
+    .reviews_normal_wrapper {
+      width: 80%;
+      margin: 0 0 0 10%;
+    }
+}
+
+.reviews_normal_container {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+@media (min-device-width: 1800px) and (min-device-height: 800px) {
+  .reviews_normal_container {
+    height: 80%;
+  }
+}
+.reviews_credits_container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+@media (min-device-width: 1800px) and (min-device-height: 800px) {
+  .reviews_credits_container {
+    height: 80%;
+  }
+}
+
+#tab-content1 {
+  width: 80%;
+  margin: 0 0 0 10%;
+}
+@media (min-device-width: 1024px) {
+  #tab-content1 {
+    margin: 0 5% 0 0;
+  }
+}
+@media (orientation: landscape) and (min-device-height: 300px) {
+  #tab-content1{
+    margin: 0 0 0 5%;
+  }
+}
+
+#tab-content2 {
+  width: 80%;
+  margin: 0 0 0 -10%;
+}
+@media (min-device-width: 370px) {
+  #tab-content2 {
+    margin: 0 0 0 -8%;
+  }
+}
+@media (min-device-width: 400px) {
+  #tab-content2 {
+    margin: 0 0 0 -5%;
+  }
+}
+@media (min-device-width: 1024px) {
+  #tab-content2 {
+    margin: 0 10% 0 0;
+  }
+}
+@media (orientation: landscape) and (min-device-height: 300px) {
+  #tab-content2 {
+    margin: 0 0 0 -5%;
+  }
+}
+
+.tabs {
+  width: 100%;
+  float: none;
+  list-style: none;
+  position: relative;
+  margin: 0 0 0 -10%;
+  text-align: left;
+}
+
+@media (min-device-width: 768px) {
+  .tabs {
+    margin: 0 0 0 5px;
+  }
+}
+@media (min-device-width: 1024px) {
+  .tabs {
+    margin: 0 0 0 10px;
+  }
+}
+@media (orientation: landscape) and (min-device-height: 300px) {
+  .tabs {
+    margin: 10px 0 0 0;
+  }
+}
+@media (orientation: landscape) and (min-device-height: 414px) {
+  .tabs {
+    margin: 10px 0 0 0;
+  }
+}
+
+.tabs li {
+    float: left;
+    display: block;
+  }
+
+.tabs input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+  }
+
+.tabs label {
+    width: auto;
+    height: 5%;
+    display: block;
+    border-radius: 5px 5px 0 0;
+    font-size: 17px;
+    font-weight: normal;
+    background: #fff;
+    cursor: pointer;
+    top: 4px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 5px black;
+  }
+.tabs label:hover {
+  background: rgb(250, 250, 250);
+  color: rgb(180, 21, 17);
+}
+@media (min-device-width: 1024px) {
+  .tabs label {
+    padding: 21px 21px;
+    height: 3%;
+  }
+}
+@media (orientation: landscape) and (min-device-height: 300px) {
+  .tabs label {
+    height: 10%;
+  }
+}
+
+label h4 {
+  font-size: 80%;
+  text-align: center;
+  padding: 5px 5px 0 5px;
+}
+@media (min-device-width: 1024px) {
+  label h4 {
+    padding: 0;
+    margin: -10px 0 0 0;
+    font-size: 100%;
+  }
+}
+
+.tab-content{
+  height: 59vh;
+  z-index: 2;
+  display: none;
+  position: absolute;
+}
+@media (min-device-width: 1024px) {
+  .tab-content {
+    height: 70vh;
+  }
+}
+
+   /*The Magic*/
+[id^="tab"]:checked + label {
+     background: rgb(250, 250, 250);
+     color: rgb(280, 21, 17);
+   }
+[id^="tab"]:checked ~ [id^="tab-content"] {
+     display: block;
+   }
