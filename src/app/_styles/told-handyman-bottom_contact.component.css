@@ -207,7 +207,7 @@ body .myModal-open {
    width:100%;
    border:none;
    background:rgb(180, 21, 17);
-   background-image:linear-gradient(bottom, rgb(159, 34, 34) 0%, rgb(180, 21, 17) 52%);
+   background-image:linear-gradient(to top, rgb(159, 34, 34) 0%, rgb(180, 21, 17) 52%);
    background-image:-moz-linear-gradient(bottom, rgb(159, 34, 34) 0%, rgb(180, 21, 17) 52%);
    background-image:-webkit-linear-gradient(bottom, rgb(159, 34, 34) 0%, rgb(180, 21, 17) 52%);
    color:#FFF;
@@ -216,7 +216,7 @@ body .myModal-open {
    border-radius:5px;
 }
 #contact-form button[type="submit"]:hover {
-   background-image:linear-gradient(bottom, rgb(25, 93, 184) 0%, rgb(46, 80, 184) 52%);
+   background-image:linear-gradient(to top, rgb(25, 93, 184) 0%, rgb(46, 80, 184) 52%);
    background-image:-moz-linear-gradient(bottom, rgb(25, 93, 184) 0%, rgb(46, 80, 184) 52%);
    background-image:-webkit-linear-gradient(bottom,rgb(25, 93, 184)  0%, rgb(46, 80, 184) 52%);
    -webkit-transition:background 0.3s ease-in-out;

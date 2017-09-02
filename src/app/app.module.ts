@@ -24,7 +24,7 @@ import { AppConfig }              from './app.config';
 import { Ng2PageScrollModule }    from 'ng2-page-scroll/ng2-page-scroll';
 import { ModalModule }            from 'ng2-modal';
 import { FileUploadModule }       from 'ng2-file-upload/file-upload/file-upload.module';
-import { SwiperModule }           from 'angular2-useful-swiper';
+import { SwiperModule }           from 'ngx-swiper-wrapper';
 import { MyModalComponent }       from './_directives/myModal.component';
 
 @NgModule({

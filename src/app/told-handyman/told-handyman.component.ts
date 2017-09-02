@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { PageScroll } from 'ng2-page-scroll';
 import { ModalModule } from 'ng2-modal';
-import { SwiperModule } from 'angular2-useful-swiper';
+import { SwiperModule, SwiperConfigInterface } from 'ngx-swiper-wrapper';
 import { FormGroup, FormControl, Validators, FormBuilder }  from '@angular/forms';
 
 import { Http } from '@angular/http';
@@ -25,6 +25,8 @@ import { MyModalService } from '../_services/myModal.service';
   ]
 })
 export class ToldHandymanComponent implements OnInit {
+
+// @ViewChild(swiper) swiperContainer: SwiperModule;
 
 addContactForm: FormGroup;
 contactName = new FormControl('', Validators.required);
@@ -72,17 +74,14 @@ phoneCombined: string = '';
   review = {};
   reviewIsEditing = false;
 
-  constructor(public http: Http,
-              public dataService: DataService,
-              public formBuilder: FormBuilder,
-              public myModalService: MyModalService
+  constructor(private http: Http,
+              private dataService: DataService,
+              private formBuilder: FormBuilder,
+              private myModalService: MyModalService
             ){ }
 
   ngOnInit() {
-    this.readGallerys();
-    this.readServices();
-    this.readServiceLists();
-    this.readReviews();
+
 
     this.addContactForm = this.formBuilder.group({
       contactName: this.contactName,
@@ -111,37 +110,6 @@ phoneCombined: string = '';
         this.addContactForm.reset();
       },
       error => console.log('Create contact form error at AdminHandymanComponent.')
-    );
-  }
-
-  readGallerys() {
-    this.dataService.readGallerys().subscribe(
-      data => this.gallerys = data,
-      error => console.log(error),
-      () => this.galleryIsLoading = false
-    );
-  }
-  readServices() {
-    this.dataService.readServices().subscribe(
-      data => this.services = data,
-      error => console.log(error),
-      () => this.isLoading = false
-    );
-  }
-  readServiceLists() {
-    this.dataService.readServiceLists().subscribe(
-      // console.log('Reading ServiceList from T-H.component.');
-      data => this.serviceLists = data,
-      error => console.log(error),
-      () => this.isLoading = false
-    );
-  }
-  readReviews() {
-    this.dataService.readReviews().subscribe(
-      // console.log("Reading Reviews from Told Handyman component."),
-      data => this.reviews = data,
-      error => console.log(error),
-      () => this.reviewIsLoading = false
     );
   }
 
