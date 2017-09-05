@@ -360,12 +360,66 @@
     <!-- End of mid_reviews_container -->
     <div id="bottom_contact_container">
 
-      <!-- <div class="myModal_button"> -->
+
         <button class="modalButton btn myModal_button" (click)="openMyModal('custom-modal-1')">CLICK TO CONTACT US</button>
-      <!-- </div> -->
+
       <myModal id="custom-modal-1">
     <div class="myModal">
         <div class="myModal-body">
+          <!-- <form id="gform" method="POST" class="pure-form pure-form-stacked"
+    action="https://script.google.com/macros/s/AKfycbylReZIoZiUPErUxZeSWRWw_xNMY3xKdfHak8BF2lezNXuAaRx-/exec">
+
+
+      <fieldset class="pure-group">
+        <label for="name">Name: </label>
+        <input id="name" name="name" placeholder="What your Mom calls you" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" rows="10"
+        placeholder="Tell us what's on your mind..."></textarea>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email"><em>Your</em> Email Address:</label>
+        <input id="email" name="email" type="email" value=""
+        required placeholder="your.name@email.com"/>
+        <span id="email-invalid" style="display:none">
+          Must be a valid email address</span>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="color">Favourite Color: </label>
+        <input id="color" name="color" placeholder="green" />
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+    </form>
+
+
+    <div style="display:none;" id="thankyou_message">
+      <h2><em>Thanks</em> for contacting us!
+        We will get back to you soon!</h2>
+    </div>
+
+
+    <script data-cfasync="false" type="text/javascript"
+    src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
+    </script> -->
+
+    <!-- END -->
+
+    <!-- <form method="POST" action="http://formspree.io/jalshield@gmail.com">
+      <input type="text" name="name" placeholder="Your name">
+      <input type="email" name="email" placeholder="Your email">
+      <input type="tel" name="phone" placeholder="Your phone #">
+      <textarea name="message" placeholder="Your message"></textarea>
+      <button type="submit">Send</button>
+    </form> -->
+
             <h1>We Want To Hear From You</h1>
             <form [formGroup]="addContactForm" (ngSubmit)="createContactForm()" id='contact-form'>
                 <div>
@@ -424,53 +478,6 @@
           </div>
         </div>
       </div><br><br>
-
-        <!-- <div class="rowModal contactForm_Box">
-            <button (click)="mycontact.open()" class="modalButton btn"><p>CLICK TO CONTACT US</p></button>
-            <modal #mycontact class="modal_box">
-                <modal-header id="modal_header_contactForm">
-                    <h1>We Want To Hear From You</h1>
-                </modal-header>
-                <modal-content>
-                    <form [formGroup]="addContactForm" (ngSubmit)="createContactForm()" id='contact-form'>
-                        <div>
-                            <label for="name">
-               <span class="required">Name: *</span>
-               <input class="form-control" formControlName="contactName" type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
-             </label>
-                        </div>
-                        <div>
-                            <label for="email">
-               <span class="required">Email: *</span>
-               <input class="form-control" formControlName="contactEmail" type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
-             </label>
-                        </div>
-                        <div>
-                            <label for="phone">
-               <span class="required">Phone #: *</span><br>
-               <div class="contactPhone_div">
-                 <p>(area code)  </p><input class="form-control contactPhone_input" formControlName="contactPhone1of3" type=tel name="phone" size=3 maxlength="3" required="required"> -
-                 <input class="form-control contactPhone_input" formControlName="contactPhone2of3" type=tel name="phone" size=3 maxlength="3" required="required"> -
-                 <input class="form-control contactPhone_input" formControlName="contactPhone3of3" type=tel name="phone" size=4 maxlength="4" required="required">
-               </div>
-             </label>
-                        </div>
-                        <div>
-                            <label for="message">
-               <span class="required">Message: *</span>
-               <textarea class="form-control" formControlName="contactMessage" id="message" name="message" placeholder="Please write your message here." tabindex="6" required="required"></textarea>
-             </label>
-                        </div>
-                        <div>
-                            <button name="submit" type="submit" id="submit" [disabled]="!addContactForm.valid" (click)="mycontact.close()">SEND</button>
-                        </div>
-                    </form>
-                </modal-content>
-                <modal-footer>
-                    <button class="btn btn-primary" (click)="mycontact.close()">cancel</button>
-                </modal-footer>
-            </modal>
-          </div> -->
 
     </div><!-- End of bottom_contact_container -->
 

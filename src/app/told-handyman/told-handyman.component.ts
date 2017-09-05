@@ -98,7 +98,7 @@ phoneCombined = '';
       // contactPhone1of3 + contactPhone2of3 + contactPhone3of3: this.contactPhone,
       contactMessage: this.contactMessage,
     });
-    this.phoneCombined = this.addContactForm.value.contactPhone1of3;
+    this.phoneCombined = this.addContactForm.value.contactPhone1of3+this.addContactForm.value.contactPhone2of3+this.addContactForm.value.contactPhone3of3;
 
   }
 
@@ -114,11 +114,14 @@ phoneCombined = '';
 
   //===============Contact Form Connections=====================================
   createContactForm() {
-    // this.addContactForm.value.contactPhone = this.phoneCombined;
-    // console.log(" PART 2 Create Contact Form shows contactPhone as: " + this.addContactForm.value.contactPhone);
+    var phoneCB = this.addContactForm.value.contactPhone1of3+ '-'+this.addContactForm.value.contactPhone2of3+ '-'+this.addContactForm.value.contactPhone3of3;
+
+    var formContact = {Name: this.addContactForm.value.contactName, Email: this.addContactForm.value.contactEmail, Phone: phoneCB, Message: this.addContactForm.value.contactMessage};
+
     console.log('Create Contact Form shows contactPhone as: ' + '(' + this.addContactForm.value.contactPhone1of3 + ')' + this.addContactForm.value.contactPhone2of3 + '-' + this.addContactForm.value.contactPhone3of3);
-    // console.log("PART 3 Create Contact Form shows phoneCombined as: " + this.phoneCombined);
-    this.dataService.createContactForm(this.addContactForm.value).subscribe(
+
+    console.log('Create Contact Form show the PHONECOMBINED as: ' + phoneCB);
+    this.dataService.createContactForm(formContact).subscribe(
       res => {
         const newContactForm = res.json();
         console.log('Create contact form successfull at AdminHandymanComponent.');
