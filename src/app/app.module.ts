@@ -26,6 +26,7 @@ import { ModalModule }            from 'ng2-modal';
 import { FileUploadModule }       from 'ng2-file-upload/file-upload/file-upload.module';
 import { SwiperModule }           from 'ngx-swiper-wrapper';
 import { MyModalComponent }       from './_directives/myModal.component';
+// import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { MyModalComponent }       from './_directives/myModal.component';
     Ng2PageScrollModule.forRoot(),
     FileUploadModule,
     ModalModule,
+    // ModalModule.forRoot()
   ],
   providers: [
     DataService,

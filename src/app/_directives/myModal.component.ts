@@ -18,7 +18,7 @@ export class MyModalComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit(): void {
-        let modal = this;
+        const modal = this;
 
         // ensure id attribute exists
         if (!this.id) {
@@ -31,7 +31,8 @@ export class MyModalComponent implements OnInit, OnDestroy {
 
         // close modal on background click
         this.element.on('click', function (e: any) {
-            var target = $(e.target);
+            const target = $(e.target);
+            console.log("modal was open successfully.");
             if (!target.closest('.myModal-body').length) {
                 modal.close();
             }

@@ -1,66 +1,89 @@
-#mid_services_container {
+.mid_services_container {
+  width: 100vw;
+  height: 137vh;
+  padding: 0 0 0 0;
+  margin: 5vh 0 0 0;
+  background-color: #fff;
+  color: #000;
+  border-bottom: 5px #000 solid;
+  /*border: 3px solid hotpink;*/
+  position: relative;
+}
+/*.mid_services_container {
   width: 100vw;
   height: 137vh;
   padding: 0 0 0 0;
   margin: -140px 0 0 0;
   background-color: #fff;
   color: #000;
-  border-bottom: 5px #000 solid;
-}
-@media (min-device-width: 768px) {
-  #mid_services_container {
+  border: 3px solid hotpink;
+  position: relative;
+}*/
+@media (min-device-width: 760px) {
+  .mid_services_container {
     height: 75vh;
-    margin: -8vh 0 3vh 0;
+    margin: 0 0 3vh 0;
+    /*padding: -200px 0 0 0;*/
   }
 }
 @media (min-device-width: 1024px) {
-  #mid_services_container {
+  .mid_services_container {
     width: 100%;
     height: 140vh;
-    margin: -22vh 0 3vh 0;
+    margin: 0 0 3vh 0;
+    /*border: 3px solid blue;*/
   }
 }
 @media (min-device-width: 1350px) {
-  #mid_services_container {
+  .mid_services_container {
     height: 140vh;
-    margin-bottom: 3vh;
+    /*margin-bottom: 3vh;*/
   }
 }
 @media (orientation: landscape) {
-  #mid_services_container {
+  .mid_services_container {
     height: 175vh;
-    margin: -22vh 0 0 0;
+    /*margin: -22vh 0 0 0;*/
   }
 }
 @media (orientation: landscape) and (min-device-height: 375px) {
-  #mid_services_container {
+  .mid_services_container {
     height: 165vh;
     /*margin: -50vh 0 0 0;*/
-    margin: -17vh 0 0 0;
+    /*margin: -17vh 0 0 0;*/
   }
 }
 @media (orientation: landscape) and (min-device-height: 414px) {
-  #mid_services_container {
+  .mid_services_container {
     height: 143vh;
     /*margin: -50vh 0 0 0;*/
-    margin: -19vh 0 0 0;
+    /*margin: -19vh 0 0 0;*/
   }
 }
 @media (min-device-width: 1800px) and (min-device-height: 800px) {
-  #mid_services_container {
-    margin: -15vh 0 0 0;
+  .mid_services_container {
+    /*margin: -15vh 0 0 0;*/
   }
+}
+
+@media (min-device-width: 768px) {
+.mid_services_container2 {
+  /*margin: 9vh 0 0 0;*/
+  /*background: purple;*/
+}
 }
 
 
 .callUs {
   width: 30px;
   height: 75px;
-  top: 60;
-  position: sticky;
+  /*top: 60px;*/
   margin: 0 0 0 -5px;
   padding: 0;
   z-index: 3;
+  /*border: 3px solid lawngreen;*/
+  visibility: hidden;
+  position: fixed;
 }
 @media (min-device-width: 1024px) {
   .callUs {
@@ -68,35 +91,75 @@
     height: 150px;
   }
 }
+.callUs2 {
+  /*border: 3px solid blue;*/
+  /*position: fixed;*/
+  visibility: visible;
+  top: 100px;
+}
+
 
 .callUs_box {
   width: 100%;
-  height: 100%;
+  height: 70%;
   padding: 10px 0 0 0;
   margin: 0 0 0 3px;
   background: rgb(180, 21, 17);
   color: white;
   text-align: center;
-  word-wrap: break-word;
-  border-radius: 5px;
+  z-index: 3;
+  box-shadow: 0 6px 20px black;
+  /*border: 3px solid orange;*/
+  /*border-radius: 5px;*/
+}
+@media (min-device-width: 1024px) {
+  .callUs_box {
+    height: 90%;
+    word-wrap: break-word;
+  }
 }
 .callUs_box strong {
-  margin: 0;
-  font-size: 60%;
+  margin: -30% 0 0 0;
+  font-size: 10%;
+  display: none;
+}
+.callUs_box p {
+  display: run-in;
+  font-size: 40%;
+  margin: -5px 0 0 0;
 }
 @media (min-device-width: 1024px) {
   .callUs_box strong {
-    font-size: 110%;
+    font-size: 90%;
+    display: inline;
+  }
+  .callUs_box p {
+    display: none;
   }
 }
 .callUs_box a {
   color: #fff
 }
+.callUs_box_icon {
+  width: 80%;
+  height: 45%;
+  margin: 20% 0 0 10%;
+  background-image: url('../../images/Phone-PNG-File.png');
+  background-size: cover;
+  /*border: 3px solid lawngreen;*/
+}
+@media (min-device-width: 1024px) {
+  .callUs_box_icon {
+    width: 60%;
+    height: 22%;
+    margin: 10% 0 0 15%;
+  }
+}
 
 .grid-container {
   width: 100vw;
   height: auto;
-  margin: 22% 0 0 0;
+  margin: 0 0 0 0;
 }
 @media (min-device-width: 768px) {
   .grid-container {
@@ -430,9 +493,25 @@ span.overlay {
   }
 }
 
+.close_service_modal {
+  background: rgb(180, 21, 17);
+  color: white;
+  box-shadow: 0 3px 10px black;
+  border-radius: 35px;
+  float: right;
+  font-weight: 600;
+}
+.close_serviceList_modal {
+  background: rgb(180, 21, 17);
+  color: white;
+  box-shadow: 0 3px 10px black;
+  border-radius: 35px;
+  font-weight: 600;
+}
+
 .modal_box {
-  width: 100px;
-  height: 100px;
+  width: 500px;
+  height: 500px;
 }
 
 #modalImage {

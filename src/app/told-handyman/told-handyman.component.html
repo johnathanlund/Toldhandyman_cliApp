@@ -4,8 +4,9 @@
         <input type="checkbox" id="btn-menu">
         <label for="btn-menu" id="btn-menu-label" onclick><img src="https://cdn4.iconfinder.com/data/icons/basic-ui-elements/700/06_menu_stack-512.png" alt=""></label>
         <span class="top_menu_logo">
-          <!-- <h4>TOLD HANDYMAN</h4> -->
-          <div class="top_menu_logo_image"></div>
+          <h4>TOLD HANDYMAN SERVICE</h4>
+          <div class="top_menu_logo_hammer"></div>
+          <!-- <div class="top_menu_logo_image"></div> -->
         </span>
         <nav class="desktop_menu">
             <a class="link_home" pageScroll href="#handyman_container">HOME</a>
@@ -48,11 +49,13 @@
         </div>
     </div>
     <!-- End of top_gallery_container -->
-    <div class="callUs" [class.fixedsticky]="callHandyman">
-        <div class="callUs_box"><a href="tel:+18017851889"><strong>CLICK<br> TO <br> CALL <br> US <br> HERE</strong></a></div>
+    <div class="callUs" [ngClass]="{'callUs2': callUsIsFixed, 'mid_services_container2': callUsIsFixed}">
+    <!-- <div class="callUs" [class.fixedsticky]="callHandyman"> -->
+      <div class="callUs_box"><a href="tel:+18017851889"><strong>CLICK TO CALL US HERE</strong><p>CALL US</p>
+        <div class="callUs_box_icon"></div></a></div>
     </div>
     <!-- Services container breaks at 1355px -->
-    <div id="mid_services_container">
+    <div id="mid_services_container" class="mid_services_container mid_services_container2">
         <div class="grid-container">
             <div class="row">
                 <div class="col-1"></div>
@@ -84,12 +87,14 @@
                   <div class="service_title_mobile"><h4>REMODELS</h4></div>
                   <div class="service_body">
                       <div class="service_image">
-                          <a class="zoom" (click)="myModal1.open()">
+                          <!-- <a class="zoom" (click)="myModal1.open()"> -->
+                          <a class="zoom" (click)="openMyModal('myModal1')">
                               <img id="imageService" class="img-thumbnail" src="http://hkremodel.com/wp-content/gallery/exterior-remodel/exterior-remodel-room-additions-hkc-v3.jpg"></a>
-                          <modal #myModal1 class="modal_box service_image_Modal">
-                              <modal-content>
+                          <myModal id='myModal1'>
+                            <div class="myModal">
+                              <div class="myModal-body"><button class="close_service_modal" (click)="closeMyModal('myModal1')">CLOSE</button>
                                   <img id="modalImage" class="img-resized" src="http://hkremodel.com/wp-content/gallery/exterior-remodel/exterior-remodel-room-additions-hkc-v3.jpg">
-                              </modal-content></modal></div>
+                              </div></div><div class="myModal-background"></div></myModal></div>
                       <div class="service_text">A handyman is a person who is very good with their hands. Their job description covers a variety of duties
                     that involve fixing and repairing of things both indoor and outdoor in their organizations to make them look good.</div>
                   </div></div>
@@ -98,12 +103,13 @@
                       <div class="service_title_mobile"><h4>KITCHEN & BATHS</h4></div>
                       <div class="service_body">
                           <div class="service_image">
-                              <a class="zoom" (click)="myModal2.open()">
+                              <a class="zoom" (click)="openMyModal('myModal2')">
                                   <img id="imageService" class="img-thumbnail" src="http://i.vimeocdn.com/video/523141124_1280x720.jpg"></a>
-                              <modal #myModal2 class="modal_box service_image_Modal">
-                                  <modal-content>
-                                      <img id="modalImage" class="img-resized" src="http://i.vimeocdn.com/video/523141124_1280x720.jpg">
-                                  </modal-content></modal></div>
+                                  <myModal id='myModal2'>
+                                    <div class="myModal">
+                                      <div class="myModal-body"><button class="close_service_modal" (click)="closeMyModal('myModal2')">CLOSE</button>
+                                          <img id="modalImage" class="img-resized" src="http://i.vimeocdn.com/video/523141124_1280x720.jpg">
+                                      </div></div><div class="myModal-background"></div></myModal></div>
                           <div class="service_text">A handyman is a person who is very good with their hands. Their job description covers a variety of duties
                         that involve fixing and repairing of things both indoor and outdoor in their organizations to make them look good.</div>
                       </div></div>
@@ -112,12 +118,13 @@
                           <div class="service_title_mobile"><h4>DECKS & PATIOS</h4></div>
                           <div class="service_body">
                               <div class="service_image">
-                                  <a class="zoom" (click)="myModal3.open()">
+                                  <a class="zoom" (click)="openMyModal('myModal3')">
                                       <img id="imageService" class="img-thumbnail" src="https://s-media-cache-ak0.pinimg.com/originals/05/0a/a1/050aa1bfd4390f63da02e234454b0da2.jpg"></a>
-                                  <modal #myModal3 class="modal_box service_image_Modal">
-                                      <modal-content>
-                                          <img id="modalImage" class="img-resized" src="https://s-media-cache-ak0.pinimg.com/originals/05/0a/a1/050aa1bfd4390f63da02e234454b0da2.jpg">
-                                      </modal-content></modal></div>
+                                      <myModal id='myModal3'>
+                                        <div class="myModal">
+                                          <div class="myModal-body"><button class="close_service_modal" (click)="closeMyModal('myModal3')">CLOSE</button>
+                                              <img id="modalImage" class="img-resized" src="https://s-media-cache-ak0.pinimg.com/originals/05/0a/a1/050aa1bfd4390f63da02e234454b0da2.jpg">
+                                          </div></div><div class="myModal-background"></div></myModal></div>
                               <div class="service_text">A handyman is a person who is very good with their hands. Their job description covers a variety of duties
                             that involve fixing and repairing of things both indoor and outdoor in their organizations to make them look good.</div>
                           </div></div>
@@ -126,12 +133,13 @@
                               <div class="service_title_mobile"><h4>DRYWALL REPAIR</h4></div>
                               <div class="service_body">
                                   <div class="service_image">
-                                      <a class="zoom" (click)="myModal4.open()">
+                                      <a class="zoom" (click)="openMyModal('myModal4')">
                                           <img id="imageService" class="img-thumbnail" src="https://s-media-cache-ak0.pinimg.com/originals/46/05/98/460598c1f2170daf64208dbc8549ac2c.jpg"></a>
-                                      <modal #myModal4 class="modal_box service_image_Modal">
-                                          <modal-content>
-                                              <img id="modalImage" class="img-resized" src="https://s-media-cache-ak0.pinimg.com/originals/46/05/98/460598c1f2170daf64208dbc8549ac2c.jpg">
-                                          </modal-content></modal></div>
+                                          <myModal id='myModal4'>
+                                            <div class="myModal">
+                                              <div class="myModal-body"><button class="close_service_modal" (click)="closeMyModal('myModal4')">CLOSE</button>
+                                                  <img id="modalImage" class="img-resized" src="https://s-media-cache-ak0.pinimg.com/originals/46/05/98/460598c1f2170daf64208dbc8549ac2c.jpg">
+                                              </div></div><div class="myModal-background"></div></myModal></div>
                                   <div class="service_text">A handyman is a person who is very good with their hands. Their job description covers a variety of duties
                                 that involve fixing and repairing of things both indoor and outdoor in their organizations to make them look good.</div>
                               </div></div>
@@ -140,12 +148,13 @@
                                   <div class="service_title_mobile"><h4>CUSTOM WALK-IN CLOSETS</h4></div>
                                   <div class="service_body">
                                       <div class="service_image">
-                                          <a class="zoom" (click)="myModal5.open()">
+                                          <a class="zoom" (click)="openMyModal('myModal5')">
                                               <img id="imageService" class="img-thumbnail" src="http://hgtvhome.sndimg.com/content/dam/images/hgrm/fullset/2011/9/13/8/RX-Press-Kits_Wellborn-Cabinets-closet-island_s4x3.jpg.rend.hgtvcom.1280.960.jpeg"></a>
-                                          <modal #myModal5 class="modal_box service_image_Modal">
-                                              <modal-content>
-                                                  <img id="modalImage" class="img-resized" src="http://hgtvhome.sndimg.com/content/dam/images/hgrm/fullset/2011/9/13/8/RX-Press-Kits_Wellborn-Cabinets-closet-island_s4x3.jpg.rend.hgtvcom.1280.960.jpeg">
-                                              </modal-content></modal></div>
+                                              <myModal id='myModal5'>
+                                                <div class="myModal">
+                                                  <div class="myModal-body"><button class="close_service_modal" (click)="closeMyModal('myModal5')">CLOSE</button>
+                                                      <img id="modalImage" class="img-resized" src="http://hgtvhome.sndimg.com/content/dam/images/hgrm/fullset/2011/9/13/8/RX-Press-Kits_Wellborn-Cabinets-closet-island_s4x3.jpg.rend.hgtvcom.1280.960.jpeg">
+                                                  </div></div><div class="myModal-background"></div></myModal></div>
                                       <div class="service_text">A handyman is a person who is very good with their hands. Their job description covers a variety of duties
                                     that involve fixing and repairing of things both indoor and outdoor in their organizations to make them look good.</div>
                                   </div></div>
@@ -154,12 +163,13 @@
                                       <div class="service_title_mobile"><h4>CUSTOM DOORS</h4></div>
                                       <div class="service_body">
                                           <div class="service_image">
-                                              <a class="zoom" (click)="myModal6.open()">
+                                              <a class="zoom" (click)="openMyModal('myModal6')">
                                                   <img id="imageService" class="img-thumbnail" src="https://img1.etsystatic.com/032/0/8403700/il_fullxfull.567254271_miof.jpg"></a>
-                                              <modal #myModal6 class="modal_box service_image_Modal">
-                                                  <modal-content>
-                                                      <img id="modalImage" class="img-resized" src="https://img1.etsystatic.com/032/0/8403700/il_fullxfull.567254271_miof.jpg">
-                                                  </modal-content></modal></div>
+                                                  <myModal id='myModal6'>
+                                                    <div class="myModal">
+                                                      <div class="myModal-body"><button class="close_service_modal" (click)="closeMyModal('myModal6')">CLOSE</button>
+                                                          <img id="modalImage" class="img-resized" src="https://img1.etsystatic.com/032/0/8403700/il_fullxfull.567254271_miof.jpg">
+                                                      </div></div><div class="myModal-background"></div></myModal></div>
                                           <div class="service_text">A handyman is a person who is very good with their hands. Their job description covers a variety of duties
                                         that involve fixing and repairing of things both indoor and outdoor in their organizations to make them look good.</div>
                                       </div></div>
@@ -168,12 +178,13 @@
                                           <div class="service_title_mobile"><h4>HOME TO DO LISTS</h4></div>
                                           <div class="service_body">
                                               <div class="service_image">
-                                                  <a class="zoom" (click)="myModal7.open()">
+                                                  <a class="zoom" (click)="openMyModal('myModal7')">
                                                       <img id="imageService" class="img-thumbnail" src="http://21243-presscdn.pagely.netdna-cdn.com/wp-content/uploads/2017/01/List-of-the-Best-Home-Repair-in-Dubai.jpg"></a>
-                                                  <modal #myModal7 class="modal_box service_image_Modal">
-                                                      <modal-content>
-                                                          <img id="modalImage" class="img-resized" src="http://21243-presscdn.pagely.netdna-cdn.com/wp-content/uploads/2017/01/List-of-the-Best-Home-Repair-in-Dubai.jpg">
-                                                      </modal-content></modal></div>
+                                                      <myModal id='myModal7'>
+                                                        <div class="myModal">
+                                                          <div class="myModal-body"><button class="close_service_modal" (click)="closeMyModal('myModal7')">CLOSE</button>
+                                                              <img id="modalImage" class="img-resized" src="http://21243-presscdn.pagely.netdna-cdn.com/wp-content/uploads/2017/01/List-of-the-Best-Home-Repair-in-Dubai.jpg">
+                                                          </div></div><div class="myModal-background"></div></myModal></div>
                                               <div class="service_text">A handyman is a person who is very good with their hands. Their job description covers a variety of duties
                                             that involve fixing and repairing of things both indoor and outdoor in their organizations to make them look good.</div>
                                           </div></div>
@@ -182,12 +193,13 @@
                                               <div class="service_title_mobile"><h4>PAINTING</h4></div>
                                               <div class="service_body">
                                                   <div class="service_image">
-                                                      <a class="zoom" (click)="myModal8.open()">
+                                                      <a class="zoom" (click)="openMyModal('myModal8')">
                                                           <img id="imageService" class="img-thumbnail" src="https://s-media-cache-ak0.pinimg.com/originals/40/ad/fb/40adfb3d964c9760307e973639ca300c.jpg"></a>
-                                                      <modal #myModal8 class="modal_box service_image_Modal">
-                                                          <modal-content>
-                                                              <img id="modalImage" class="img-resized" src="https://s-media-cache-ak0.pinimg.com/originals/40/ad/fb/40adfb3d964c9760307e973639ca300c.jpg">
-                                                          </modal-content></modal></div>
+                                                          <myModal id='myModal8'>
+                                                            <div class="myModal">
+                                                              <div class="myModal-body"><button class="close_service_modal" (click)="closeMyModal('myModal8')">CLOSE</button>
+                                                                  <img id="modalImage" class="img-resized" src="https://s-media-cache-ak0.pinimg.com/originals/40/ad/fb/40adfb3d964c9760307e973639ca300c.jpg">
+                                                              </div></div><div class="myModal-background"></div></myModal></div>
                                                   <div class="service_text">A handyman is a person who is very good with their hands. Their job description covers a variety of duties
                                                 that involve fixing and repairing of things both indoor and outdoor in their organizations to make them look good.</div>
                                               </div></div>
@@ -195,8 +207,10 @@
         </div>
         <!--This ends the class grid-container -->
         <div class="rowModal">
-            <button (click)="myListModal.open()" class="modalButton btn service_list_btn"><p>Full List of Services</p></button>
-            <modal #myListModal class="modal_box">
+            <button (click)="openMyModal('myListModal')" class="modalButton btn service_list_btn"><p>Full List of Services</p></button>
+            <myModal id='myListModal'>
+              <div class="myModal">
+                <div class="myModal-body">
                 <modal-header class="modal_header">
                     <h1>Told Handyman Service List</h1>
                 </modal-header>
@@ -229,9 +243,12 @@
                     </tbody>
                 </modal-content>
                 <modal-footer>
-                    <button class="btn btn-primary" (click)="myListModal.close()">close</button>
+                    <button class="close_serviceList_modal" (click)="closeMyModal('myListModal')">close</button>
                 </modal-footer>
-            </modal>
+              </div>
+              </div>
+              <div class="myModal-background"></div>
+            </myModal>
         </div>
     </div>
     <!-- End of mid_services_container -->

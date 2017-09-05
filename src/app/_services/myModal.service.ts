@@ -1,5 +1,5 @@
 // import * as _ from 'underscore';
-import { _ } from 'underscore';
+import * as _ from 'underscore';
 
 export class MyModalService {
     private modals: any[] = [];
@@ -11,19 +11,19 @@ export class MyModalService {
 
     remove(id: string) {
         // remove modal from array of active modals
-        let modalToRemove = _.findWhere(this.modals, { id: id });
+        const modalToRemove = _.findWhere(this.modals, { id: id });
         this.modals = _.without(this.modals, modalToRemove);
     }
 
     open(id: string) {
         // open modal specified by id
-        let modal = _.findWhere(this.modals, { id: id });
+        const modal = _.findWhere(this.modals, { id: id });
         modal.open();
     }
 
     close(id: string) {
         // close modal specified by id
-        let modal = _.find(this.modals, { id: id });
+        const modal = _.find(this.modals, { id: id });
         modal.close();
     }
 }

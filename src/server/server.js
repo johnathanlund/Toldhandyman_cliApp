@@ -1,7 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var session = require('express-session');
-var mongoose = require('mongoose');
+// var mongoose = require('mongoose');
 var cors = require('cors');
 // var multer = require('multer');
 // var fs = require('fs');
@@ -41,7 +41,7 @@ app.use(session({
 }));
 
 
-mongoose.set('debug', true);
+// mongoose.set('debug', true);
 
 // HEADERS
 var permitCrossDomainRequests = function(req, res, next) {

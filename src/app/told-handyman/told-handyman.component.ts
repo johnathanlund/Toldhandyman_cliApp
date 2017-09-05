@@ -1,7 +1,8 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { PageScroll } from 'ng2-page-scroll';
-import { ModalModule } from 'ng2-modal';
+// import { ModalModule } from 'ng2-modal';
 import { SwiperModule, SwiperConfigInterface } from 'ngx-swiper-wrapper';
 import { FormGroup, FormControl, Validators, FormBuilder }  from '@angular/forms';
 
@@ -36,7 +37,7 @@ contactPhone2of3 = new FormControl('', Validators.required);
 contactPhone3of3 = new FormControl('', Validators.required);
 contactMessage = new FormControl('', Validators.required);
 
-phoneCombined: string = '';
+phoneCombined = '';
 
   config: Object = {
           pagination: '.swiper-pagination',
@@ -44,7 +45,7 @@ phoneCombined: string = '';
           nextButton: '.swiper-button-next',
           prevButton: '.swiper-button-prev',
           spaceBetween: 30,
-          // loop: true,
+          loop: true,
           // This adds autoplay option to the gallery
           // autoplay: 4500,
           // autoplayDisableOnInteraction: false
@@ -74,15 +75,19 @@ phoneCombined: string = '';
   review = {};
   reviewIsEditing = false;
 
-  constructor(private http: Http,
-              private dataService: DataService,
-              private formBuilder: FormBuilder,
-              private myModalService: MyModalService
+  public callUsIsFixed: boolean = false;
+
+
+  constructor(
+              @Inject(DOCUMENT)
+              public document: Document,
+              public http: Http,
+              public dataService: DataService,
+              public formBuilder: FormBuilder,
+              public myModalService: MyModalService
             ){ }
 
   ngOnInit() {
-
-
     this.addContactForm = this.formBuilder.group({
       contactName: this.contactName,
       contactEmail: this.contactEmail,
@@ -97,16 +102,26 @@ phoneCombined: string = '';
 
   }
 
+  @HostListener("window:scroll", [])
+ onWindowScroll() {
+   let number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+   if (number > 500) {
+     this.callUsIsFixed = true;
+   } else if (this.callUsIsFixed && number < 10) {
+     this.callUsIsFixed = false;
+   }
+ }
+
   //===============Contact Form Connections=====================================
   createContactForm() {
     // this.addContactForm.value.contactPhone = this.phoneCombined;
     // console.log(" PART 2 Create Contact Form shows contactPhone as: " + this.addContactForm.value.contactPhone);
-    console.log("Create Contact Form shows contactPhone as: " + '(' + this.addContactForm.value.contactPhone1of3 + ')' + this.addContactForm.value.contactPhone2of3 + '-' + this.addContactForm.value.contactPhone3of3);
+    console.log('Create Contact Form shows contactPhone as: ' + '(' + this.addContactForm.value.contactPhone1of3 + ')' + this.addContactForm.value.contactPhone2of3 + '-' + this.addContactForm.value.contactPhone3of3);
     // console.log("PART 3 Create Contact Form shows phoneCombined as: " + this.phoneCombined);
     this.dataService.createContactForm(this.addContactForm.value).subscribe(
       res => {
-        let newContactForm = res.json();
-        console.log("Create contact form successfull at AdminHandymanComponent.");
+        const newContactForm = res.json();
+        console.log('Create contact form successfull at AdminHandymanComponent.');
         this.addContactForm.reset();
       },
       error => console.log('Create contact form error at AdminHandymanComponent.')
