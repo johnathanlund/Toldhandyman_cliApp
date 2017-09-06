@@ -1,19 +1,24 @@
 #mid_about_container {
   width: 100vw;
-  height: 85vh;
+  height: 100vh;
   background-color: #fff;
   border-bottom: 5px #000 solid;
   margin: -3vh 0 0 0;
   padding: 0;
 }
+@media (min-device-width: 360px) {
+  #mid_about_container {
+    height: 85vh;
+  }
+}
 @media (min-device-width: 375px) {
   #mid_about_container {
-    height: 70vh;
+    height: 80vh;
   }
 }
 @media (min-device-width: 414px) {
   #mid_about_container {
-    height: 60vh;
+    height: 70vh;
   }
 }
 @media (min-device-width: 768px)  {
@@ -25,7 +30,7 @@
 @media (min-device-width: 1024px) {
   #mid_about_container {
     width: 100%;
-    height: 85vh;
+    height: 120vh;
   }
 }
 @media (orientation: landscape) {
@@ -40,7 +45,7 @@
 }
 @media (orientation: landscape) and (min-device-width: 1024px) {
   #mid_about_container {
-    height: 80vh;
+    height: 95vh;
   }
 }
 @media (min-device-width: 1800px) and (min-device-height: 800px) {
@@ -122,7 +127,8 @@
   width: 25vw;
   height: 15vh;
   float: right;
-  background-image: url('http://toldplumbing.com/images/header.jpg');
+  /*background-image: url('../../images/told_plumbing_logo.jpg');*/
+    background-image: url('../../images/told-family.jpg');
   background-size: cover;
   margin: 2vh 7vw 15px 1vw;
 }
@@ -168,21 +174,25 @@
   width: 100vw;
   height: 5vh;
   text-align: center;
-  margin: -2% 0 0 5%;
+  margin: -10% 0 0 20%;
+  display: flex;
+  /*border: 3px solid blue;*/
 }
 @media (min-device-width: 375px)  {
   .about_link {
-    margin: -5% 0 0 3%;
+    margin: -15% 0 0 20%;
   }
 }
 @media (min-device-width: 414px)  {
   .about_link {
-    margin: -10% 0 0 3%;
+    margin: -15% 0 0 17%;
   }
 }
 @media (min-device-width: 1024px)  {
   .about_link {
-    margin: 0;
+    height: 8vh;
+    /*margin: -15% 0 0 17%;*/
+    /*border: 3px solid black;*/
   }
 }
 @media (orientation: landscape) {
@@ -195,28 +205,94 @@
     margin: -50px 0 0 0;
   }
 }
-@media (orientation: landscape) and (min-device-height: 768px) {
+/*@media (orientation: landscape) and (min-device-height: 768px) {
   .about_link {
-    margin: 10px 0 0 0;
+    margin: 1 0 0 0;
   }
-}
+}*/
 @media (min-device-width: 1800px) and (min-device-height: 800px) {
   .about_link {
     margin: -5vh 0 0 0;
   }
 }
+@media (orientation: landscape) and (min-device-width: 1024px) {
+  .about_link {
+    margin: -4vh 0 0 17%;
+    /*border: 3px dotted purple;*/
+  }
+}
+.toldPlumbing {
+  width: 40%;
+  height: 100%;
+  /*margin: 0;*/
+}
+@media (orientation: landscape) and (min-device-width: 1024px) {
+  .toldPlumbing{
+    /*border: 2px solid yellow;*/
+    margin: 0 0 0 7%;
+  }
+}
+.toldPlumbing div{
+  width: 80%;
+  height: 100%;
+  background-image: url('http://www.toldplumbing.com/wp-content/uploads/2017/06/Toldplumbinglogo.png');
+  background-size: cover;
+  /*border: 3px solid orange;*/
+}
 
-.about_link a{
-  font-size: 90%;
-  color: rgb(82, 177, 145);
-  margin: 0.5vh 10px 0 0;
+@media (min-device-width: 1024px) {
+  .toldPlumbing div {
+    height: 100%;
+    width: 34%;
+  }
+}
+
+.toldPlumbingFacebook {
+  width: 40%;
+  /*float: right;*/
+  /*border: 3px solid hotpink;*/
+}
+@media (orientation: landscape) and (min-device-width: 1024px) {
+  .toldPlumbingFacebook {
+    /*border: 2px solid yellow;*/
+    margin: 0 0 0 -10%;
+  }
+}
+.toldPlumbingFacebook div {
+  width: 22%;
+  height: 100%;
+  background-image: url('../../images/facebook-icon-5.png');
+  background-size: cover;
+  margin: 0 0 0 20%;
+  /*border: 2px solid lawngreen;*/
 }
 @media (min-device-width: 1024px) {
+  .toldPlumbingFacebook div {
+    /*height: 100%;*/
+    width: 10%;
+    /*margin: 0 0 0 20%;*/
+  }
+}
+@media (orientation: landscape) and (min-device-width: 1024px) {
+  .toldPlumbingFacebook div {
+    /*border: 2px solid yellow;*/
+    margin: 0 0 0 20%;
+  }
+}
+
+.about_link a{
+  /*width: 40%;*/
+  /*border: 3px solid red;*/
+  font-size: 90%;
+  color: rgb(82, 177, 145);
+  /*margin: 0.5vh 0 0 10%;*/
+}
+/*@media (min-device-width: 1024px) {
   .about_link a {
     font-size: 120%;
     margin: 1vh 1vw 0 0;
   }
-}
+}*/
 .about_link a:hover {
   color: rgb(180, 11, 17);
   font-stretch: ultra-expanded;

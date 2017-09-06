@@ -1,7 +1,7 @@
 .top_gallery_container {
-  width: 100vw;
+  width: 105vw;
   height: 70vh;
-  margin: 11% 0 0 0;
+  margin: 11% 0 0 -10vw;
   background-color: #fff;
   /*border: 3px solid red;*/
   border-bottom: 5px white solid;
@@ -22,8 +22,9 @@
 }
 @media (min-device-width: 1024px) {
   .top_gallery_container {
-    width: 100%;
+    width: 95vw;
     height: 95vh;
+    margin: 5% 0 0 -5vw;
   }
 }
 @media (orientation: landscape) and (min-device-height: 420px) {
