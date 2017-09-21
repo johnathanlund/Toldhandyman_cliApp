@@ -7,23 +7,23 @@
   margin: -3vh 0 0 0;
   padding: 0;
 }
-@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   #mid_reviews_container {
     height: 85vh;
   }
 }
-@media (orientation: landscape) and (min-device-height: 300px) {
+@media (orientation: landscape) and (min-height: 300px) {
   #mid_reviews_container {
     height: 80vh;
   }
 }
-@media (orientation: landscape) and (max-device-height: 1024px) {
+@media (orientation: landscape) and (max-height: 1024px) {
   #mid_reviews_container {
     height: 88vh;
     margin: 0 0 0 0;
   }
 }
-@media (min-device-width: 1800px) and (min-device-height: 800px) {
+@media (min-width: 1800px) and (min-height: 800px) {
   #mid_reviews_container {
     height: 70vh;
     margin: 0 0 0 0;
@@ -31,14 +31,14 @@
 }
 
 .reviews_heading {
-  width: 100vw;
+  width: 100%;
   height: 6%;
   text-align: center;
   padding: 0;
 }
-@media (min-device-width: 1024px)  {
+@media (min-width: 1024px)  {
   .reviews_heading {
-    width: 100vw;
+    width: 100%;
     height: 7%;
   }
 }
@@ -49,7 +49,7 @@
   line-height: 1.0;
   color: rgb(180, 21, 17);
 }
-@media (orientation: landscape) and (min-device-height: 300px) {
+@media (orientation: landscape) and (min-height: 300px) {
   #reviews_heading_text {
     margin: 15px 0 5px 0;
   }
@@ -64,7 +64,7 @@
   text-align: center;
   animation: 40s credits linear infinite;
 }
-@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
     .reviews_wrapper {
       width: 80%;
       height: 20vh;
@@ -99,7 +99,7 @@ for the review consistently vs sized to content.*/
   font-size: 70%;
   border-bottom: 1px solid rgb(180, 21, 17);
 }
-@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
     .work_review {
       font-size: 90%;
       margin: 0 0 80 0;
@@ -108,21 +108,21 @@ for the review consistently vs sized to content.*/
 
 .review_image {
   float: right;
-  width: 30vw;
+  width: 30%;
   height: 18vh;
   margin: 0 0 20px 10px;
 }
 
-@media (min-device-width: 768px) {
+@media (min-width: 768px) {
   .review_image {
-    width: 15vw;
+    width: 15%;
     height: 10vh;
     margin: -2vh 0 20px 10px;
   }
 }
-@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   .review_image {
-    width: 20vw;
+    width: 20%;
     height: 20vh;
     margin: -2vh 0 0 10px;
   }
@@ -145,7 +145,7 @@ for the review consistently vs sized to content.*/
   /*left: 10%;*/
   margin: 0 0 0 10%;
 }
-@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
     .reviews_normal_wrapper {
       width: 80%;
       margin: 0 0 0 10%;
@@ -157,7 +157,7 @@ for the review consistently vs sized to content.*/
   height: 100%;
   overflow: scroll;
 }
-@media (min-device-width: 1800px) and (min-device-height: 800px) {
+@media (min-width: 1800px) and (min-height: 800px) {
   .reviews_normal_container {
     height: 80%;
   }
@@ -167,7 +167,7 @@ for the review consistently vs sized to content.*/
   width: 100%;
   overflow: hidden;
 }
-@media (min-device-width: 1800px) and (min-device-height: 800px) {
+@media (min-width: 1800px) and (min-height: 800px) {
   .reviews_credits_container {
     height: 80%;
   }
@@ -177,12 +177,12 @@ for the review consistently vs sized to content.*/
   width: 80%;
   margin: 0 0 0 10%;
 }
-@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   #tab-content1 {
     margin: 0 5% 0 0;
   }
 }
-@media (orientation: landscape) and (min-device-height: 300px) {
+@media (orientation: landscape) and (min-height: 300px) {
   #tab-content1{
     margin: 0 0 0 5%;
   }
@@ -192,22 +192,22 @@ for the review consistently vs sized to content.*/
   width: 80%;
   margin: 0 0 0 -10%;
 }
-@media (min-device-width: 370px) {
+@media (min-width: 370px) {
   #tab-content2 {
     margin: 0 0 0 -8%;
   }
 }
-@media (min-device-width: 400px) {
+@media (min-width: 400px) {
   #tab-content2 {
     margin: 0 0 0 -5%;
   }
 }
-@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   #tab-content2 {
     margin: 0 10% 0 0;
   }
 }
-@media (orientation: landscape) and (min-device-height: 300px) {
+@media (orientation: landscape) and (min-height: 300px) {
   #tab-content2 {
     margin: 0 0 0 -5%;
   }
@@ -215,29 +215,29 @@ for the review consistently vs sized to content.*/
 
 .tabs {
   width: 100%;
-  float: none;
+  /*float: none;*/
   list-style: none;
-  position: relative;
-  margin: 0 0 0 -10%;
+  /*position: relative;*/
+  margin: 0 0 0 0;
   text-align: left;
 }
 
-@media (min-device-width: 768px) {
+@media (min-width: 768px) {
   .tabs {
-    margin: 0 0 0 5px;
+    /*margin: 0 0 0 5px;*/
   }
 }
-@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   .tabs {
-    margin: 0 0 0 10px;
+    /*margin: 0 0 0 10px;*/
   }
 }
-@media (orientation: landscape) and (min-device-height: 300px) {
+@media (orientation: landscape) and (min-height: 300px) {
   .tabs {
     margin: 10px 0 0 0;
   }
 }
-@media (orientation: landscape) and (min-device-height: 414px) {
+@media (orientation: landscape) and (min-height: 414px) {
   .tabs {
     margin: 10px 0 0 0;
   }
@@ -270,13 +270,13 @@ for the review consistently vs sized to content.*/
   background: rgb(250, 250, 250);
   color: rgb(180, 21, 17);
 }
-@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   .tabs label {
     padding: 21px 21px;
     height: 3%;
   }
 }
-@media (orientation: landscape) and (min-device-height: 300px) {
+@media (orientation: landscape) and (min-height: 300px) {
   .tabs label {
     height: 10%;
   }
@@ -287,7 +287,7 @@ label h4 {
   text-align: center;
   padding: 5px 5px 0 5px;
 }
-@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   label h4 {
     padding: 0;
     margin: -10px 0 0 0;
@@ -301,7 +301,7 @@ label h4 {
   display: none;
   position: absolute;
 }
-@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   .tab-content {
     height: 70vh;
   }

@@ -1,62 +1,117 @@
 #mid_about_container {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #fff;
   border-bottom: 5px #000 solid;
   margin: -3vh 0 0 0;
   padding: 0;
 }
-@media (min-device-width: 360px) {
+@media (min-width: 360px) {
   #mid_about_container {
     height: 85vh;
   }
 }
-@media (min-device-width: 375px) {
+@media (min-width: 375px) {
   #mid_about_container {
-    height: 80vh;
+    /*height: 80vh;*/
   }
 }
-@media (min-device-width: 414px) {
+@media (min-width: 414px) {
   #mid_about_container {
     height: 70vh;
   }
 }
-@media (min-device-width: 768px)  {
+@media (min-width: 500px) {
+  #mid_about_container {
+    height: 90vh;
+  }
+}
+@media (min-width: 768px)  {
   #mid_about_container {
     height: 40vh;
     margin: -3vh 0 5vh 0;
   }
 }
-@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   #mid_about_container {
-    width: 100%;
-    height: 120vh;
+    height: 80vh;
   }
 }
-@media (orientation: landscape) {
-  #mid_about_container {
-    height: 90vh;
-  }
-}
-@media (orientation: landscape) and (min-device-height: 414px) {
-  #mid_about_container {
-    height: 75vh;
-  }
-}
-@media (orientation: landscape) and (min-device-width: 1024px) {
+@media (min-width: 1200px) {
   #mid_about_container {
     height: 95vh;
   }
 }
-@media (min-device-width: 1800px) and (min-device-height: 800px) {
+@media (min-width: 1400px) {
+  #mid_about_container {
+    height: 70vh;
+  }
+}
+@media (min-width: 1700px) {
+  #mid_about_container {
+    height: 60vh;
+  }
+}
+/*@media (orientation: landscape) {
+  #mid_about_container {
+    height: 90vh;
+  }
+}
+@media (orientation: landscape) and (min-height: 414px) {
+  #mid_about_container {
+    height: 75vh;
+  }
+}
+@media (orientation: landscape) and (min-width: 1024px) {
+  #mid_about_container {
+    height: 95vh;
+  }
+}*/
+@media (min-width: 1800px) and (min-height: 800px) {
   #mid_about_container {
     height: 60vh;
     margin: 0 0 0 0;
   }
 }
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    #mid_about_container {
+      height: 110vh;
+    }
+  }
+  @media only screen
+    and (min-device-width: 360px)
+    and (max-device-width: 640px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+      #mid_about_container {
+        height: 110vh;
+      }
+    }
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    #mid_about_container {
+      height: 85vh;
+    }
+  }
+  @media only screen
+  and (min-device-width: 414px)
+  and (min-device-heigt: 736px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    #mid_about_container {
+      height: 90vh;
+    }
+  }
 
 .about_heading {
-  width: 100vw;
+  width: 100%;
   height: 7%;
   font-style: italic;
   color: rgb(180, 21, 17);
@@ -65,34 +120,34 @@
   margin: 0 0 20px 0;
   padding: 0;
 }
-@media (min-device-width: 375px) {
+@media (min-width: 375px) {
   .about_heading {
     margin: 0 0 30px 0;
   }
 }
-@media (min-device-width: 414px) {
+@media (min-width: 414px) {
   .about_heading {
     margin: 0 0 40px 0;
   }
 }
 
-@media (min-device-width: 768px) {
+@media (min-width: 768px) {
   .about_heading {
     margin: -3vh 0 6vh 0;
   }
 }
-@media (min-device-width: 1024px)  {
+@media (min-width: 1024px)  {
   .about_heading {
     height: 20%;
     margin: 0;
   }
 }
-@media (orientation: landscape) and (max-device-height: 375px) {
+@media (orientation: landscape) and (max-height: 375px) {
   .about_heading {
     margin: -20px 0 40px 0;
   }
 }
-@media (min-device-width: 1800px) and (min-device-height: 800px) {
+@media (min-width: 1800px) and (min-height: 800px) {
   .about_heading {
     margin: -20px 0 40px 0;
   }
@@ -105,26 +160,26 @@
 }
 
 .about_body {
-  width: 96vw;
+  width: 96%;
   height: 89%;
   margin: -3vh 0 0 0;
 }
-@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   .about_body {
     width: 100%;
     height: 74%;
   }
 }
-@media (orientation: landscape) and (max-device-height: 375px) {
+@media (orientation: landscape) and (max-height: 375px) {
     .about_body {
-      width: 90vw;
+      width: 90%;
       height: 75%;
-      margin: -3vh 0 0 5vw;
+      margin: -3vh 0 0 5%;
     }
 }
 
 .about_image {
-  width: 25vw;
+  width: 25%;
   height: 15vh;
   float: right;
   /*background-image: url('../../images/told_plumbing_logo.jpg');*/
@@ -132,38 +187,39 @@
   background-size: cover;
   margin: 2vh 7vw 15px 1vw;
 }
-@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   .about_image {
-    width: 35vw;
+    width: 35%;
     height: 40vh;
   }
 }
-@media (orientation: landscape) and (max-device-height: 375px) {
+@media (orientation: landscape) and (max-height: 375px) {
   .about_image {
     height: 30vh;
     margin: 1vh 2vw 15px 1vw;
   }
 }
-@media (min-device-width: 1800px) and (min-device-height: 800px) {
+@media (min-width: 1800px) and (min-height: 800px) {
   .about_image {
-    width: 30vw;
+    width: 30%;
     height: 30vh;
   }
 }
 
 .about_text {
-  width: 100%;
+  width: 90%;
   height: 55vh;
   margin: 0 0 0 8vw;
   font-size: 65%;
+  /*background-color: purple;*/
 }
-@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   .about_text {
     font-size: 100%;
     margin: 0 0 0 4vw;
   }
 }
-@media (orientation: landscape) and (max-device-height: 375px) {
+@media (orientation: landscape) and (max-height: 375px) {
   .about_text {
     font-size: 50%;
     margin: 0 0 0 1vw;
@@ -171,91 +227,170 @@
 }
 
 .about_link {
-  width: 100vw;
+  width: 100%;
   height: 5vh;
   text-align: center;
-  margin: -10% 0 0 20%;
+  margin: -5% 0 0 0;
   display: flex;
+  /*background-color: purple;*/
   /*border: 3px solid blue;*/
 }
-@media (min-device-width: 375px)  {
+@media (min-width: 360px)  {
   .about_link {
-    margin: -15% 0 0 20%;
+    /*margin: -15% 0 0 0;*/
   }
 }
-@media (min-device-width: 414px)  {
+@media (min-width: 375px)  {
   .about_link {
-    margin: -15% 0 0 17%;
+    margin: -10% 0 0 0;
   }
 }
-@media (min-device-width: 1024px)  {
+@media (min-width: 414px)  {
+  .about_link {
+    /*margin: -15% 0 0 0;*/
+  }
+}
+@media (min-width: 550px)  {
   .about_link {
     height: 8vh;
-    /*margin: -15% 0 0 17%;*/
+    margin: -8% 0 0 0;
+  }
+}
+@media (min_width: 700px) {
+  .about_link {
+    height: 5vh;
+    margin: -1% 0 0 0;
+  }
+}
+@media (min-width: 1024px)  {
+  .about_link {
+    height: 7vh;
+    margin: -3% 0 0 0;
     /*border: 3px solid black;*/
   }
 }
-@media (orientation: landscape) {
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .about_link {
+      height: 8vh;
+      margin: 0 0 0 0;
+    }
+  }
+  @media only screen
+  and (min-device-width: 360px)
+  and (max-device-width: 640px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .about_link {
+      height: 8vh;
+      margin: -1% 0 0 0;
+    }
+  }
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .about_link {
+      height: 7vh;
+      margin: -1% 0 0 0;
+    }
+  }
+  /*@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .about_link {
+      height: 7vh;
+      margin: -7% 0 0 0;
+    }
+  }*/
+/*@media (orientation: landscape) {
   .about_link {
     margin: -15px 0 0 0;
   }
 }
-@media (orientation: landscape) and (min-device-height: 414px) {
+@media (orientation: landscape) and (min-height: 414px) {
   .about_link {
     margin: -50px 0 0 0;
   }
 }
-/*@media (orientation: landscape) and (min-device-height: 768px) {
+@media (orientation: landscape) and (min-height: 768px) {
   .about_link {
     margin: 1 0 0 0;
   }
-}*/
-@media (min-device-width: 1800px) and (min-device-height: 800px) {
+}
+@media (min-width: 1800px) and (min-height: 800px) {
   .about_link {
     margin: -5vh 0 0 0;
   }
 }
-@media (orientation: landscape) and (min-device-width: 1024px) {
+@media (orientation: landscape) and (min-width: 1024px) {
   .about_link {
-    margin: -4vh 0 0 17%;
-    /*border: 3px dotted purple;*/
+    margin: -4vh 0 0 0;
   }
-}
+}*/
+
 .toldPlumbing {
-  width: 40%;
+  width: 95%;
   height: 100%;
-  /*margin: 0;*/
+  /*border: 3px solid lawngreen;*/
+  /*float: right;*/
 }
-@media (orientation: landscape) and (min-device-width: 1024px) {
+@media (orientation: landscape) and (min-width: 1024px) {
   .toldPlumbing{
     /*border: 2px solid yellow;*/
-    margin: 0 0 0 7%;
+    /*margin: 0 0 0 7%;*/
   }
 }
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .toldPlumbing {
+      margin: 0 0 0 0;
+    }
+  }
 .toldPlumbing div{
-  width: 80%;
+  width: 50%;
   height: 100%;
   background-image: url('http://www.toldplumbing.com/wp-content/uploads/2017/06/Toldplumbinglogo.png');
   background-size: cover;
+  margin: 0 0 0 40%;
+  /*float: right;*/
   /*border: 3px solid orange;*/
 }
-
-@media (min-device-width: 1024px) {
+@media (min-width: 768px) {
   .toldPlumbing div {
-    height: 100%;
-    width: 34%;
+    /*height: 100%;*/
+    width: 35%;
+    margin: 0 0 0 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .toldPlumbing div {
+    /*height: 100%;*/
+    width: 22%;
+    /*margin: 0 0 0 60%;*/
   }
 }
 
 .toldPlumbingFacebook {
-  width: 40%;
+  width: 50%;
+  height: 100%;
   /*float: right;*/
   /*border: 3px solid hotpink;*/
 }
-@media (orientation: landscape) and (min-device-width: 1024px) {
+@media (orientation: landscape) and (min-width: 1024px) {
   .toldPlumbingFacebook {
     /*border: 2px solid yellow;*/
-    margin: 0 0 0 -10%;
+    /*margin: 0 0 0 -10%;*/
   }
 }
 .toldPlumbingFacebook div {
@@ -263,37 +398,143 @@
   height: 100%;
   background-image: url('../../images/facebook-icon-5.png');
   background-size: cover;
-  margin: 0 0 0 20%;
-  /*border: 2px solid lawngreen;*/
+  margin: 0 0 0 40%;
+  /*float: right;*/
+  /*border: 2px solid yellow;*/
 }
-@media (min-device-width: 1024px) {
+@media (min-width: 768px) {
   .toldPlumbingFacebook div {
-    /*height: 100%;*/
-    width: 10%;
+    height: 4vh;
+    width: 16%;
+    margin: 0 0 0 60%;
+  }
+}
+@media (min-width: 1024px) {
+  .toldPlumbingFacebook div {
+    height: 100%;
+    width: 9%;
+    margin: 0 0 0 50%;
+  }
+}
+@media (orientation: landscape) and (min-width: 1024px) {
+  .toldPlumbingFacebook div {
+    /*border: 2px solid yellow;*/
     /*margin: 0 0 0 20%;*/
   }
 }
-@media (orientation: landscape) and (min-device-width: 1024px) {
-  .toldPlumbingFacebook div {
-    /*border: 2px solid yellow;*/
-    margin: 0 0 0 20%;
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .toldPlumbingFacebook div {
+      width: 11%;
+    }
   }
+  @media only screen
+  and (min-device-width: 360px)
+  and (max-device-width: 640px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape)  {
+    .toldPlumbingFacebook div {
+      width: 11%;
+    }
+  }
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .toldPlumbingFacebook div {
+      width: 11%;
+    }
+  }
+  @media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .toldPlumbingFacebook div {
+      width: 11%;
+    }
+  }
+
+.toldPlumbing p {
+  font-size: 70%;
+  margin: 10% 0 0 40%;
+}
+@media (min-width: 360px) {
+  .toldPlumbing p {
+font-size: 80%;
+  }
+}
+@media (min-width: 768px) {
+  .toldPlumbing p {
+    font-size: 90%;
+    margin: 10% 0 0 70%;
+  }
+}
+@media (min-width: 1024px) {
+  .toldPlumbing p {
+    font-size: 100%;
+    margin: 5% 0 0 80%;
+  }
+}
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .toldPlumbing p {
+      font-size: 75%;
+      margin: 5% 0 0 40%;
+    }
+  }
+  @media only screen
+  and (min-device-width: 360px)
+  and (max-device-width: 640px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape)  {
+    .toldPlumbing p {
+      margin: 5% 0 0 40%;
+    }
+  }
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .toldPlumbing p {
+      margin: 5% 0 0 50%;
+    }
+  }
+  @media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .toldPlumbing p {
+      margin: 5% 0 0 65%;
+    }
+  }
+
+.toldPlumbing p:hover {
+  color: rgb(180, 11, 17);
+  font-stretch: ultra-expanded;
 }
 
 .about_link a{
-  /*width: 40%;*/
+  width: 40%;
   /*border: 3px solid red;*/
   font-size: 90%;
-  color: rgb(82, 177, 145);
+  /*color: rgb(82, 177, 145);*/
+  color: blue;
+  font-weight: 600;
   /*margin: 0.5vh 0 0 10%;*/
 }
-/*@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   .about_link a {
     font-size: 120%;
-    margin: 1vh 1vw 0 0;
+    /*margin: 1vh 1vw 0 0;*/
   }
-}*/
-.about_link a:hover {
-  color: rgb(180, 11, 17);
-  font-stretch: ultra-expanded;
 }

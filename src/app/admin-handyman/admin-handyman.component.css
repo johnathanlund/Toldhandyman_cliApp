@@ -1,0 +1,23 @@
+p {
+  width: 100%;
+  border-bottom: 2px solid red;
+}
+.test1 {
+  width: 100%;
+  height: 50vh;
+  background: blue;
+  position: relative;
+}
+.test2 {
+  width: 100%;
+  height: 50%;
+  background: orange;
+  top: 25vh;
+  /*margin: 25vh 0 0 0;*/
+}
+.test3 {
+  width: 50%;
+  height: 25vh;
+  background: purple;
+  border: 2px solid black;
+}
