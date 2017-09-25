@@ -85,7 +85,8 @@
 }
 
 .review_author h4{
-  color: rgb(180, 21, 17);
+  /*color: rgb(180, 21, 17);*/
+  color: blue;
 }
 .review_author h4 p {
   font-size: 80%;
@@ -155,7 +156,14 @@ for the review consistently vs sized to content.*/
 .reviews_normal_container {
   width: 100%;
   height: 100%;
+  margin-top: 10%;
   overflow: scroll;
+  /*border: 1px solid black;*/
+}
+@media (min-width: 1024px) {
+  .reviews_normal_container {
+    margin-top: 1%;
+  }
 }
 @media (min-width: 1800px) and (min-height: 800px) {
   .reviews_normal_container {
@@ -190,34 +198,38 @@ for the review consistently vs sized to content.*/
 
 #tab-content2 {
   width: 80%;
-  margin: 0 0 0 -10%;
+  margin: 0 0 0 -4%;
+  /*border: 3px solid blue;*/
 }
-@media (min-width: 370px) {
+@media (min-width: 375px) {
   #tab-content2 {
-    margin: 0 0 0 -8%;
+    margin: 0 0 0 0;
   }
 }
 @media (min-width: 400px) {
   #tab-content2 {
-    margin: 0 0 0 -5%;
+    /*margin: 0 0 0 -5%;*/
+  }
+}
+@media (min-width: 768px) {
+  #tab-content2 {
+    margin: 0 0 0 4%;
   }
 }
 @media (min-width: 1024px) {
   #tab-content2 {
-    margin: 0 10% 0 0;
+    margin: 0 0 0 6%;
   }
 }
 @media (orientation: landscape) and (min-height: 300px) {
   #tab-content2 {
-    margin: 0 0 0 -5%;
+    /*margin: 0 0 0 -5%;*/
   }
 }
 
 .tabs {
   width: 100%;
-  /*float: none;*/
   list-style: none;
-  /*position: relative;*/
   margin: 0 0 0 0;
   text-align: left;
 }
@@ -298,7 +310,8 @@ label h4 {
 .tab-content{
   height: 59vh;
   z-index: 2;
-  display: none;
+  /*display: none;*/
+  display: block;
   position: absolute;
 }
 @media (min-width: 1024px) {

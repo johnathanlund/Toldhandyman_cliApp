@@ -60,9 +60,12 @@
 }
 @media (min-width: 768px) {
   .top_menu_container {
-    /*width: 768px;*/
+    height: 5%;
+  }
+}
+@media (min-width: 800px) {
+  .top_menu_container {
     height: 3.5%;
-    /*border: 3px solid lawngreen;*/
   }
 }
 @media (min-width: 1024px) {
@@ -79,6 +82,11 @@
 @media (min-width: 1265px) {
   .top_menu_container {
     /*width: 1265px;*/
+  }
+}
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .top_menu_container {
+    height: 4%;
   }
 }
 @media (orientation: landscape) and (max-device-height: 375px) {
@@ -136,6 +144,16 @@
 @media (min-width: 568px) and (min-height: 320px){
   #btn-menu-label {
     margin: 0.3% 0 0 -7%;
+  }
+}
+@media (min-width: 768px) and (min-height: 1024px){
+  #btn-menu-label {
+    margin: 0.7% 0 0 -7%;
+  }
+}
+@media (min-width: 1024px) and (min-height: 1366px){
+  #btn-menu-label {
+    margin: 0 0 0 30%;
   }
 }
 
@@ -235,14 +253,13 @@
 
 .top_menu_logo {
   width: 70%;
-  height: 100%;
+  height: 90%;
   color: #fff;
-  /*font-style: italic;*/
-  /*font-weight: 600;*/
   display: inline-flex;
-  margin: 0 0 0 15%;
-  /*display: none;*/
+  margin: 0 0 0 10%;
   /*border: 2px solid blue;*/
+  background-image: url('../../images/menu_logo_hammer.png');
+  background-size: cover;
 }
 .top_menu_logo h4 {
   width: 80%;
@@ -253,8 +270,8 @@
 }
 @media (min-width: 375px){
   .top_menu_logo {
-    width: 80%;
-    height: 100%;
+    width: 70%;
+    height: 80%;
     /*color: rgb(180, 21, 17);*/
     display: inline-flex;
     margin: 0 0 0 15%;
@@ -266,9 +283,9 @@
 }
 @media (min-width: 414px){
   .top_menu_logo {
-    width: 80%;
-    height: 100%;
-    margin: 0 0 0 20%;
+    width: 70%;
+    height: 70%;
+    margin: 0 0 0 10%;
   }
   .top_menu_logo h4 {
     width: 65%;
@@ -277,7 +294,8 @@
 }
 @media (min-width: 768px) {
   .top_menu_logo {
-    width: 65%;
+    width: 50%;
+    height: 90%;
     margin: 0 0 0 30%;
   }
   .top_menu_logo h4 {
@@ -288,14 +306,21 @@
 }
 @media (min-width: 1024px) {
   .top_menu_logo {
-    width: 55%;
-    height: 100%;
+    width: 25%;
+    /*height: 100%;*/
     margin: 0 0 0 5%;
     padding: 0 0 0 0;
   }
   .top_menu_logo h4 {
     height: 100%;
     margin: 1% 0 0 0;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .top_menu_logo {
+    width: 60%;
+    margin: 0 0 0 40%;
   }
 }
 
